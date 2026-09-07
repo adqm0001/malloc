@@ -6,6 +6,7 @@
 
 typedef struct block_meta {
   size_t size;
+  struct block_meta *prev;
   struct block_meta *next;
   bool free;
   bool is_mmap;
